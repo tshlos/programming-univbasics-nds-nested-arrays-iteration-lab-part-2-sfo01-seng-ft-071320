@@ -15,7 +15,7 @@ def find_min_in_nested_arrays(src)
             smallest_num = src[outer_index][inner_index][0]
 
             if value < smallest_num
-                p smallest_num = value
+                smallest_num = value
                 
             end
             inner_index += 1
@@ -23,5 +23,5 @@ def find_min_in_nested_arrays(src)
         outer_index += 1
         output.push(smallest_num)
     end
-    output
+    return output
 end
